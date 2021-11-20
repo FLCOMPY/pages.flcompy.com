@@ -1,0 +1,344 @@
+:root {
+  /* Color - Footer */
+  --background-main: #181720;
+  --background-secondary-main: #1f1d2b;
+  --font-color-main: #808191;
+  --font-color-two-main: #6a5ece;
+  --font-color-three-main: #868588;
+  --color-main: #808191;
+  --color-two-main: #252836;
+  --color-three-main: #ffffff;
+  --linear-primary-main: linear-gradient(
+    90deg,
+    #1c5ca6 32.27%,
+    #1e5ca7 32.28%,
+    #6c5ecf 81.91%
+  );
+  --scrollbar: #4d4d57;
+  --scrollbar-background: transparent;
+
+  /* Color - Header */
+  --background: #181720;
+  --background-primary: #181720;
+  --background-one: #1f1d2b;
+  --background-two: #252836;
+  --color-primary: #ffffff;
+  --color-one: #2d2f47;
+  --color-two: #6a5ece;
+  --color-three: #c3c1d1;
+  --color-hover-one: #6a5ece;
+
+  /* Color Linear */
+  --linear-one: linear-gradient(
+    125.59deg,
+    #1c5ba6 -24.74%,
+    rgba(73, 89, 182, 0.95) 52.13%,
+    rgba(101, 88, 192, 0.81) 78.51%
+  );
+  --linear-two: linear-gradient(
+    -180deg,
+    #1c5ca6 -24.74%,
+    rgba(108, 94, 207) 52.13%
+  );
+  --linear-three: linear-gradient(90deg, #6c5ecf 2.21%, #1f1d2b 81.11%);
+  --linear-four: linear-gradient(
+    90deg,
+    #1c5ca6 32.27%,
+    #1e5ca7 32.28%,
+    #6c5ecf 81.91%
+  );
+  --linear-primary-main: linear-gradient(
+    90deg,
+    #1c5ca6 32.27%,
+    #1e5ca7 32.28%,
+    #6c5ecf 81.91%
+  );
+
+  /* Font */
+  --font-primary: 500 25px Poppins;
+  --font-secondary: 400 15px Inter;
+}
+
+/* Page - Styles */
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+  scrollbar-width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--color-main);
+  font: var(--font-secondary);
+}
+
+::selection {
+  background-color: var(--background-two);
+  color: var(--color-main);
+}
+
+iframe {
+  display: none;
+}
+
+/* Home - Styles */
+
+.report {
+  margin: 135px auto;
+  width: 40rem;
+}
+
+.report h1 {
+  font: 800 2.7rem 'Overpass', sans-serif;
+  color: var(--color-three);
+}
+
+.report p {
+  font: 400 1rem 'Inter', sans-serif;
+  margin-top: 15px;
+  line-height: 25px;
+  color: var(--font-color-three-main);
+  text-align: justify;
+}
+
+.report a {
+  font: 400 1rem 'Inter', sans-serif;
+  margin-top: 15px;
+  line-height: 25px;
+  color: var(--font-color-three-main);
+}
+
+.report a:hover {
+  color: var(--font-color-two-main);
+  transition: 0.3s;
+}
+
+.report h2 {
+  margin-top: 20px;
+  font: 800 1.8rem 'Overpass', sans-serif;
+  color: var(--color-three);
+}
+
+.btn {
+  margin-top: 40px;
+}
+
+.next-btn {
+  border: 2px solid var(--font-color-two-main);
+  padding: 15px 25px;
+  text-decoration: none;
+  user-select: none;
+}
+
+.next-btn:hover {
+  background: var(--font-color-two-main);
+  color: var(--color-primary) !important;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .report {
+    width: auto;
+    margin: 135px 25px;
+  }
+}
+
+/* Iniciar - Report | Style */
+
+.iniciar {
+  margin: 135px 50px;
+}
+
+.background {
+  background-color: var(--background-two);
+  width: max-content;
+  margin: auto;
+  padding: 50px;
+  border-radius: 7px;
+}
+
+.formless {
+  display: grid;
+  width: max-content;
+  margin: auto;
+}
+
+.sr-only {
+  display: none;
+}
+
+.line-1, .line-2, .line-3, .line-4 {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#assunto, textarea {
+  margin-bottom: 25px;
+}
+
+#name, #tel, #email, #idade, #url, #detalhes, #contato, #service {
+  width: 50%;
+}
+
+#name, #email, #service, #url {
+  margin-right: 8px;
+}
+
+#tel, #idade, #detalhes, #contato {
+  margin-left: 8px;
+}
+
+.iniciar input, .iniciar select, .iniciar textarea {
+  padding: 15px 7px;
+  background: var(--background-main);
+  color: var(--font-color-main);
+  border: 2px solid transparent;
+  outline: none;
+}
+
+.iniciar input::placeholder, .iniciar textarea::placeholder {
+  font: 500 12px 'Inter', sans-serif;
+  color: var(--font-color-main);
+}
+
+.iniciar textarea {
+  resize: none;
+  outline: none;
+}
+
+.iniciar input:focus, .iniciar select:focus, .iniciar textarea:focus {
+  outline: none;
+  border: 2px solid var(--color-hover-one);
+  transition: 0.3s;
+}
+
+#file {
+  cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+  background: var(--background-main);
+  font: 500 12px 'Inter', sans-serif;
+  color: var(--font-color-main);
+  border: none;
+  outline: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+::-ms-browse {
+  background-color: var(--background-main);
+  border: none;
+  font: 500 12px 'Inter', sans-serif;
+  color: var(--font-color-main);
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.iniciar select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../image/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 96%;
+  background-size: 18px;
+}
+
+.btn-line {
+  display: flex;
+  margin-top: 25px;
+}
+
+.iniciar button {
+  border: 2px solid var(--color-hover-one);
+  background: transparent;
+  font: 500 12px 'Inter', sans-serif;
+  color: var(--font-color-main);
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+.btn-reset {
+  margin-right: 15px;
+}
+
+.iniciar button:hover {
+  background: var(--color-hover-one);
+  color: var(--color-primary);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+  .background {
+    width: auto;
+  }
+
+  .formless {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iniciar {
+    margin: 135px 25px;
+  }
+
+  .background {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .line-1, .line-2, .line-3, .line-4 {
+    flex-direction: column;
+  }
+
+  .formless input, .iniciar select {
+    width: 100% !important;
+  }
+
+  #name, #email, #service, #url {
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+
+  #tel, #idade, #detalhes, #contato {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .background {
+    padding: 15px;
+  }
+
+  .iniciar {
+    margin: 135px 10px;
+  }
+
+  .btn-line {
+    justify-content: space-between;
+  }
+
+  .btn-line button {
+    width: 50%;
+  }
+}

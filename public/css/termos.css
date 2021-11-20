@@ -1,0 +1,372 @@
+:root {
+  /* Color - Footer */
+  --background-main: #181720;
+  --background-secondary-main: #1f1d2b;
+  --font-color-main: #808191;
+  --font-color-two-main: #6a5ece;
+  --font-color-three-main: #868588;
+  --color-main: #808191;
+  --color-two-main: #252836;
+  --color-three-main: #ffffff;
+  --linear-primary-main: linear-gradient(
+    90deg,
+    #1c5ca6 32.27%,
+    #1e5ca7 32.28%,
+    #6c5ecf 81.91%
+  );
+  --scrollbar: #4d4d57;
+  --scrollbar-background: transparent;
+
+  /* Color - Header */
+  --background: #181720;
+  --background-primary: #181720;
+  --background-one: #1f1d2b;
+  --background-two: #252836;
+  --color-primary: #ffffff;
+  --color-one: #2d2f47;
+  --color-two: #6a5ece;
+  --color-three: #c3c1d1;
+  --color-hover-one: #6a5ece;
+
+  /* Color Linear */
+  --linear-one: linear-gradient(
+    125.59deg,
+    #1c5ba6 -24.74%,
+    rgba(73, 89, 182, 0.95) 52.13%,
+    rgba(101, 88, 192, 0.81) 78.51%
+  );
+  --linear-two: linear-gradient(
+    -180deg,
+    #1c5ca6 -24.74%,
+    rgba(108, 94, 207) 52.13%
+  );
+  --linear-three: linear-gradient(90deg, #6c5ecf 2.21%, #1f1d2b 81.11%);
+  --linear-four: linear-gradient(
+    90deg,
+    #1c5ca6 32.27%,
+    #1e5ca7 32.28%,
+    #6c5ecf 81.91%
+  );
+  --linear-primary-main: linear-gradient(
+    90deg,
+    #1c5ca6 32.27%,
+    #1e5ca7 32.28%,
+    #6c5ecf 81.91%
+  );
+
+  /* Font */
+  --font-primary: 500 25px Poppins;
+  --font-secondary: 400 15px Inter;
+}
+
+/* Page - Styles */
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+  scrollbar-width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--color-main);
+  font: var(--font-secondary);
+}
+
+::selection {
+  background-color: var(--background-two);
+  color: var(--color-main);
+}
+
+iframe {
+  display: none;
+}
+
+/* Page - Config | v1.0.1 */
+
+.cont-home,
+.cont-terms {
+  margin: 0 15px;
+  padding: 0 35px;
+}
+
+.line02 {
+  margin: 100px 0;
+}
+
+.div-line02 {
+  height: 1.3px;
+  background: var(--linear-three);
+  transform: rotate(180deg);
+}
+
+.cont-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-title h2 {
+  font: 800 65px Overpass;
+  color: var(--color-three);
+}
+
+.nav-title h2,
+.nav-title p {
+  margin-bottom: 10px;
+}
+
+.nav-title p {
+  width: 30vw;
+  font: 500 17px Poppins;
+  color: var(--color-four);
+}
+
+.hbutton-div {
+  display: flex;
+  align-items: center;
+}
+
+.himg-div img {
+  width: 40vw;
+  user-select: none;
+}
+
+.terms-title {
+  margin-bottom: 60px;
+}
+
+.terms-title h4 {
+  font: 800 40px Overpass;
+  color: var(--color-four);
+  text-align: center;
+}
+
+@media screen and (max-width: 854px) {
+  .cont-home {
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 50px;
+  }
+
+  .nav-title p {
+    width: 72%;
+  }
+
+  .button-term-home {
+    margin-right: 50px;
+  }
+
+  .himg-div {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .nav-title p {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .hbutton-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .button-term-home {
+    margin-right: 0;
+  }
+
+  .button-term-home,
+  .button-solic-home {
+    width: 100%;
+  }
+
+  .button-solic-home {
+    margin-top: 25px;
+  }
+
+  .himg-div img {
+    width: 267px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav-title h2 {
+    font-size: 50px;
+  }
+
+  .nav-title p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .himg-div img {
+    width: 250px;
+  }
+
+  .cont-home,
+  .cont-terms {
+    padding: 15px;
+  }
+}
+
+/* v2.0 */
+
+.cont-home {
+  justify-content: space-around;
+}
+
+.hbutton-div a {
+  padding: 15px 30px;
+  border: 2px solid var(--color-hover-one);
+  border-radius: 3px;
+
+  font: 500 15px "Inter", sans-serif;
+  color: var(--color-four);
+  text-decoration: none;
+  user-select: none;
+}
+
+.hbutton-div a:hover {
+  background-color: var(--color-hover-one);
+  color: var(--color-primary);
+  transition: 0.5s;
+}
+
+/* v2.1 */
+
+.btn-home {
+  margin-right: 15px;
+}
+
+.nav-title b {
+  color: var(--color-hover-one);
+}
+
+.desktop {
+  user-select: none;
+  list-style-type: none;
+  display: grid;
+  max-width: 1122px;
+  margin: 0 auto;
+  padding: 0 24px;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 24px;
+}
+
+.desktop a {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  text-decoration: none;
+}
+
+.desktop li {
+  background-color: var(--background-two);
+  width: auto;
+  height: -webkit-fill-available;
+}
+
+.desktop li {
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+.icon {
+  background-color: var(--background-primary);
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.icon img {
+  width: 2rem;
+}
+
+.desktop b {
+  font: 400 12px 'Inter', sans-serif;
+  color: var(--color-hover-one);
+}
+
+.desktop h4 {
+  font: 600 18px 'Poppins', sans-serif;
+  color: var(--color-main);
+}
+
+.breve h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 89px;
+}
+
+.desktop li:hover {
+  border: 2px solid var(--color-hover-one);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 976px) {
+  .desktop {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cont-home {
+    margin-top: 100px;
+  }
+  
+  .desktop {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+
+  .desktop br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 513px) {
+  .hbutton-div a {
+    width: 14rem;
+  }
+
+  .btn-home {
+    margin: 0 0 15px 0;
+  }
+
+  .himg-div img {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .himg-div img {
+    width: 15rem;
+  }
+}
