@@ -30,6 +30,14 @@
         gtag('config', 'G-YMZ4KY3NQK');
     </script>
 
+    <!-- Goofle Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+    </script>
+
     <!-- Configs Page -->
     <link rel="stylesheet" href="/public/css/contato.css">
     <link rel="stylesheet" href="/public/css/style.css">
@@ -109,6 +117,11 @@
                     <span id="cont">800</span>
                 </div>
                 <p><input type="checkbox" class="checkbox" name="Aceito os Termos" id="chk1" required><label>Você aceita nosso <a href="/termos/company/termos-de-uso?id=pages.flcompy.com_contato" target="_blank" rel="noopener noreferrer">Termo de Uso</a> e nossa <a href="/termos/company/privacidade?id=pages.flcompy.com_contato" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.</lab></p>
+                <div class="g-recaptcha"
+                    data-sitekey="6Lc5N1AdAAAAAK50eex57SM0ZGsDhPnkZ83iQBRM"
+                    data-callback="onSubmit"
+                    data-size="invisible">
+                </div>
                 <button class="btn-next" type="submit">Enviar</button>
                 <i>
                     <input type="hidden" name="_next" value="https://pages.flcompy.com/ok?id=pages.flcompy.com-contato">

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Iniciar - Reportar | FLCOMPY./Pages</title>
-    <meta name="description" content="Aqui você podera denunciar ou reportar sites, serviços ou contatos da empresa Formless Company, que será examinado para melhor atentimento de nossos clientes.">
+    <title>Retirar Recibo | FLCOMPY./Pages</title>
+    <meta name="description" content="Precisa do seu recibo, é simples preencha com algumas informações em até 48 horas você recebera o recibo no seu E-mail e WhatsApp.">
     <meta name="robots" content="index">
     <meta name="author" content="Formless Company">
-    <meta name="keywords" content="Reportar, Denunciar, Formless, Reportar Formless, Denunciar Formless, Falta de respeito Formless Company, Formless Company, Formless./Loja, Forml./Site, Forml./link, FLCOMPY, FLCOMPY./Pages">
+    <meta name="keywords" content="Recibo, Meu Recibo, Formless, FLCOMPY, Formless Company, Formless./Loja, FLCOMPY./Pages">
 
     <meta property="og:type" content="page">
-    <meta property="og:url" content="http://pages.flcompy.com/i/report/iniciar/">
+    <meta property="og:url" content="http://pages.flcompy.com/i/recibo/">
     <meta property="og:title" content="">
     <meta property="og:image" content="http://pages.flcompy.com/public/image/open-graph.png">
-    <meta property="og:description" content="Aqui você podera denunciar ou reportar sites, serviços ou contatos da empresa Formless Company, que será examinado para melhor atentimento de nossos clientes.">
-    
+    <meta property="og:description" content="Precisa do seu recibo, é simples preencha com algumas informações em até 48 horas você recebera o recibo no seu E-mail e WhatsApp.">
+
     <meta property="article:author" content="Formless Company">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@">
     <meta name="twitter:title" content="">
     <meta name="twitter:creator" content="@">
-    <meta name="twitter:description" content="Aqui você podera denunciar ou reportar sites, serviços ou contatos da empresa Formless Company, que será examinado para melhor atentimento de nossos clientes.">
+    <meta name="twitter:description" content="Precisa do seu recibo, é simples preencha com algumas informações em até 48 horas você recebera o recibo no seu E-mail e WhatsApp.">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMZ4KY3NQK"></script>
@@ -31,16 +31,8 @@
         gtag('config', 'G-YMZ4KY3NQK');
     </script>
 
-    <!-- Goofle Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-      function onSubmit(token) {
-        document.getElementById("demo-form").submit();
-      }
-    </script>
-
     <!-- Configs Page -->
-    <link rel="stylesheet" href="/public/css/report.css">
+    <link rel="stylesheet" href="/public/css/recibo.css">
     <link rel="stylesheet" href="/public/css/style.css">
     <link rel="shortcut icon" href="/public/image/flaticon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/public/image/apple-touch.png">
@@ -63,7 +55,7 @@
                 <nav class="pages-forml">
                     <a href="/">pages.flcompy.com</a>
                     <b>/</b>
-                    <p>Reportar</p>
+                    <p>Recibo</p>
                 </nav>
             </section>
             <section class="sect2-man">
@@ -94,66 +86,15 @@
         <div class="line-header"></div>
     </header>
     <main class="main" id="main">
-        <section class="iniciar">
-            <div class="background">
-                <form class="formless" action="https://formsubmit.co/report@flcompy.com" method="POST" autocomplete="off">
-                    <div class="line-1">
-                        <label for="name" class="sr-only">Nome Completo *</label>
-                        <input type="text" name="Nome" placeholder="Nome Completo *" id="name" required>
-                        <label for="tel" class="sr-only">Seu Telefone</label>
-                        <input type="tel" name="Telefone" placeholder="Telefone" id="tel" maxlength="15">
-                    </div>
-                    <div class="line-2">
-                        <label for="email" class="sr-only">E-mail *</label>
-                        <input type="email" name="E-mail" placeholder="E-mail *" id="email" onblur="validacaoEmail(f1.email)" maxlength="60" size="60" required>
-                        <label for="idade" class="sr-only">Sua Idade</label>
-                        <input type="tel" name="Idade" placeholder="Idade" id="idade" minlength="1" maxlength="2">
-                    </div>
-                    <input type="text" name="Motivo" placeholder="Motivo do Report" id="assunto" maxlength="65" required>
-                    <div class="line-3">
-                        <select name="Qual dos serviços" id="service">
-                            <option value="err" selected disabled>Escola uma plataforma</option>
-                            <option value="Formless">formless.com.br</option>
-                            <option value="Formless./Loja">loja.fomless.com.br</option>
-                            <option value="FLCOMPY">flcompy.com</option>
-                            <option value="FLCOMPY./Pages">pages.flcompy.com</option>
-                            <option value="Forml./Link">app.forml.link</option>
-                            <option value="Forml./Site">home.forml.site</option>
-                        </select>
-                        <select name="Modo do Contato" id="contato" required>
-                            <option value="err" selected disabled>Oque está reportanto? *</option>
-                            <option value="E-mail">Por E-mail</option>
-                            <option value="Ligação">Por Ligação</option>
-                            <option value="SMS">Por SMS</option>
-                            <option value="WhatsApp">Por WhatsApp</option>
-                            <option value="Chat">Por Chat</option>
-                            <option value="Site">Por Site</option>
-                            <option value="Outro">Outros</option>
-                        </select>
-                    </div>
-                    <div class="line-4">
-                        <input type="url" name="Link" placeholder="Link" ass="validate[custom[url]] text-input" id="url">
-                        <input type="text" name="Detalhes do Contato" placeholder="Detalhes da forma do contato" id="detalhes">
-                    </div>
-                    <textarea name="Mensagem" id="mensagem" placeholder="Descreva com o máximo de detalhes possíveis *" maxlength="1000" cols="30" rows="10" required></textarea>
-                    <input type="file" name="Arquivo" id="file">
-                    <div class="btn-line">
-                        <div class="g-recaptcha"
-                            data-sitekey="6Lc5N1AdAAAAAK50eex57SM0ZGsDhPnkZ83iQBRM"
-                            data-callback="onSubmit"
-                            data-size="invisible">
-                        </div>
-                        <button type="reset" class="btn-reset">Limpar</button>
-                        <button type="submit" class="next-finish">Enviar</button>
-                    </div>
-                    <i>
-                        <input type="hidden" name="_next" value="https://pages.flcompy.com/ok?id=pages.flcompy.com-report">
-                        <input type="hidden" name="_subject" value="[Report | FLCOMPY./Pages] - Novo Contato!">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_autoresponse" value="[Report | FLCOMPY./Pages] - Esse é uma cópia do contato!">
-                        <input type="hidden" name="_template" value="table">
-                    </i>
-                </form>
+        <section class="recibo>
+            <h1>Retirar Recibo</h1>
+            <p>Para retirar seu recibo nessecitamos de algumas informações para ter a certeza que ouve uma compra no seu <strong>CPF</strong> ou <strong>CNPJ</strong>.</p>
+            <p>O prazo minimo é de 48 horas mais se recebermos muitos pedidos levaremos até 72 horas.</p>
+            <h2>Oque Preciso Informar:</h2>
+            <p>Pedimos informações basicas como <strong>Nome Completo</strong>, <strong>CPF</strong> ou <strong>CNPJ</strong>, <strong>ID do pedido</strong>, <strong>Data da compra</strong> e <strong>informações de contato</strong>.</p>
+            <p>Todas informações enviadas ficam seguras e mandidas até o pedido de exclusão pelo <a href="http://support.flcompy.com/id/delete-datebase?id=pages.flcompy.com78548-recibo" target="_blank" rel="noopener noreferrer">suporte</a>, antes veja nossa <a href="/termos/company/privacidade/" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> e <a href="/termos/company/termos-de-uso/" target="_blank" rel="noopener noreferrer">Termo de Uso</a>.</p>
+            <div class="btn">
+                <a href="./iniciar/" class="next-btn">Avançar</a>
             </div>
         </section>
     </main>
@@ -249,14 +190,6 @@
         </section>
     </footer>
 </body>
-<script src="/public/js/recibo.js"></script>
 <script src="/public/js/styles.js"></script>
-<script src="../js/jquery-1.8.2.min.js" type="text/javascript"></script>
-<script src="../js/languages/jquery.validationEngine-pt-br.js" type="text/javascript"></script>
-<script src="../js/jquery.validationEngine.js" type="text/javascript"></script>
-<script>
-    jQuery(document).ready(function(){
-        jQuery("#meuFormulario").validationEngine();
-    });
-</script>
+</body> 
 </html>

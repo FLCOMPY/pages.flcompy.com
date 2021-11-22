@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Iniciar - Reportar | FLCOMPY./Pages</title>
-    <meta name="description" content="Aqui você podera denunciar ou reportar sites, serviços ou contatos da empresa Formless Company, que será examinado para melhor atentimento de nossos clientes.">
+    <title>Direito Autorais | FLCOMPY./Pages</title>
+    <meta name="description" content="Direito Autorais da Formless Company.">
     <meta name="robots" content="index">
     <meta name="author" content="Formless Company">
-    <meta name="keywords" content="Reportar, Denunciar, Formless, Reportar Formless, Denunciar Formless, Falta de respeito Formless Company, Formless Company, Formless./Loja, Forml./Site, Forml./link, FLCOMPY, FLCOMPY./Pages">
-
+    <meta name="keywords" content="Direito Autorais, Direito Autorais da Formless Company. Formless Company, Forml./Link, Forml./Site">
+    
     <meta property="og:type" content="page">
-    <meta property="og:url" content="http://pages.flcompy.com/i/report/iniciar/">
+    <meta property="og:url" content="http://pages.flcompy.com/termos/company/direito-autorais/">
     <meta property="og:title" content="">
     <meta property="og:image" content="http://pages.flcompy.com/public/image/open-graph.png">
-    <meta property="og:description" content="Aqui você podera denunciar ou reportar sites, serviços ou contatos da empresa Formless Company, que será examinado para melhor atentimento de nossos clientes.">
+    <meta property="og:description" content="Direito Autorais da Formless Company.">
     
     <meta property="article:author" content="Formless Company">
 
@@ -19,7 +19,7 @@
     <meta name="twitter:site" content="@">
     <meta name="twitter:title" content="">
     <meta name="twitter:creator" content="@">
-    <meta name="twitter:description" content="Aqui você podera denunciar ou reportar sites, serviços ou contatos da empresa Formless Company, que será examinado para melhor atentimento de nossos clientes.">
+    <meta name="twitter:description" content="Direito Autorais da Formless Company.">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMZ4KY3NQK"></script>
@@ -27,20 +27,11 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-YMZ4KY3NQK');
     </script>
 
-    <!-- Goofle Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-      function onSubmit(token) {
-        document.getElementById("demo-form").submit();
-      }
-    </script>
-
     <!-- Configs Page -->
-    <link rel="stylesheet" href="/public/css/report.css">
+    <link rel="stylesheet" href="/public/css/terms.css">
     <link rel="stylesheet" href="/public/css/style.css">
     <link rel="shortcut icon" href="/public/image/flaticon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/public/image/apple-touch.png">
@@ -63,7 +54,7 @@
                 <nav class="pages-forml">
                     <a href="/">pages.flcompy.com</a>
                     <b>/</b>
-                    <p>Reportar</p>
+                    <p>Copyright</p>
                 </nav>
             </section>
             <section class="sect2-man">
@@ -94,66 +85,23 @@
         <div class="line-header"></div>
     </header>
     <main class="main" id="main">
-        <section class="iniciar">
-            <div class="background">
-                <form class="formless" action="https://formsubmit.co/report@flcompy.com" method="POST" autocomplete="off">
-                    <div class="line-1">
-                        <label for="name" class="sr-only">Nome Completo *</label>
-                        <input type="text" name="Nome" placeholder="Nome Completo *" id="name" required>
-                        <label for="tel" class="sr-only">Seu Telefone</label>
-                        <input type="tel" name="Telefone" placeholder="Telefone" id="tel" maxlength="15">
-                    </div>
-                    <div class="line-2">
-                        <label for="email" class="sr-only">E-mail *</label>
-                        <input type="email" name="E-mail" placeholder="E-mail *" id="email" onblur="validacaoEmail(f1.email)" maxlength="60" size="60" required>
-                        <label for="idade" class="sr-only">Sua Idade</label>
-                        <input type="tel" name="Idade" placeholder="Idade" id="idade" minlength="1" maxlength="2">
-                    </div>
-                    <input type="text" name="Motivo" placeholder="Motivo do Report" id="assunto" maxlength="65" required>
-                    <div class="line-3">
-                        <select name="Qual dos serviços" id="service">
-                            <option value="err" selected disabled>Escola uma plataforma</option>
-                            <option value="Formless">formless.com.br</option>
-                            <option value="Formless./Loja">loja.fomless.com.br</option>
-                            <option value="FLCOMPY">flcompy.com</option>
-                            <option value="FLCOMPY./Pages">pages.flcompy.com</option>
-                            <option value="Forml./Link">app.forml.link</option>
-                            <option value="Forml./Site">home.forml.site</option>
-                        </select>
-                        <select name="Modo do Contato" id="contato" required>
-                            <option value="err" selected disabled>Oque está reportanto? *</option>
-                            <option value="E-mail">Por E-mail</option>
-                            <option value="Ligação">Por Ligação</option>
-                            <option value="SMS">Por SMS</option>
-                            <option value="WhatsApp">Por WhatsApp</option>
-                            <option value="Chat">Por Chat</option>
-                            <option value="Site">Por Site</option>
-                            <option value="Outro">Outros</option>
-                        </select>
-                    </div>
-                    <div class="line-4">
-                        <input type="url" name="Link" placeholder="Link" ass="validate[custom[url]] text-input" id="url">
-                        <input type="text" name="Detalhes do Contato" placeholder="Detalhes da forma do contato" id="detalhes">
-                    </div>
-                    <textarea name="Mensagem" id="mensagem" placeholder="Descreva com o máximo de detalhes possíveis *" maxlength="1000" cols="30" rows="10" required></textarea>
-                    <input type="file" name="Arquivo" id="file">
-                    <div class="btn-line">
-                        <div class="g-recaptcha"
-                            data-sitekey="6Lc5N1AdAAAAAK50eex57SM0ZGsDhPnkZ83iQBRM"
-                            data-callback="onSubmit"
-                            data-size="invisible">
-                        </div>
-                        <button type="reset" class="btn-reset">Limpar</button>
-                        <button type="submit" class="next-finish">Enviar</button>
-                    </div>
-                    <i>
-                        <input type="hidden" name="_next" value="https://pages.flcompy.com/ok?id=pages.flcompy.com-report">
-                        <input type="hidden" name="_subject" value="[Report | FLCOMPY./Pages] - Novo Contato!">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_autoresponse" value="[Report | FLCOMPY./Pages] - Esse é uma cópia do contato!">
-                        <input type="hidden" name="_template" value="table">
-                    </i>
-                </form>
+        <section class="main-only">
+            <div class="termo">
+                <h1>Direito Autorais</h1>
+                <ul class="terms">
+                    <li>Todo conteudo encontrado na Formless Company está protegito pela lei de direitos autorais encontratos na <a href="http://click.forml.link/Ivdvul" target="_blank" rel="noopener noreferrer">Lei N° 9.610, de Fevereiro de 1998</a>.</li>
+                    <li>Nós somos contra a utilização dos direitos autorais para fins de expor ou infringir a imagem pública de qualquer indivíduo.</li>
+                    <li><strong>Se algo pertence ao seu direito autoral pedimos que entre em contato pelo e-mail <a href="mailto:comercial@flcompy.com?cc=system@flcompy.com&amp;subject=%5Bpages.flcompy.com%5D%20-%20Leis%20de%20Direito%20Autorais&amp;body=Descreva%20o%20motivo%20doi%20contato%20para%20a%20lei%20de%20direito%20audorais%20da%20Formless%20Company.%0D%0A%0D%0AInforma%C3%A7%C3%B5es%20importantes%3A%0D%0A%0D%0A%E2%80%A2%20Seu%20nome%20e%20sobrenome%0D%0A%E2%80%A2%20Melhor%20E-mail%20para%20contato%0D%0A%E2%80%A2%20Telefone%20com%20whatsapp%20para%20contato%20mais%20rapito%20%7BOpcional%7D%0D%0A%E2%80%A2%20Descreva%20o%20motivo%20do%20contato%0D%0A%E2%80%A2%20Se%20for%20de%20algum%20site%20nosso%20pedimos%20que%20informe.%20%7BEx.%3A%20pages.flcompy.com%2C%20loja.formless.com.br%7D%0D%0A%E2%80%A2%20Se%20possuir%20link%20podera%20ser%20colocado%20tambem%20para%20mais%20eficiencia%20%7BOpcional%7D%0D%0A%E2%80%A2%20Imagens%20%7BOpcional%7D%0D%0A%0D%0ANo%20assunto%20mantenha%20escrito%20%5Bpages.flcompy.com%5D%20-%20Leis%20de%20Direito%20Audorais%2C%20para%20nossa%20equipe%20poder%20intendificar%20mais%20rapito.%0D%0A%0D%0AFormless%20Company%0D%0Acomercial%40flcompy.com%0D%0ATodos%20direitos%20Reservados"><strong>comercial@flcompy.com</strong></a>.</strong></li>
+                    <li>Mande o email com todas informações de qual conteúdo você queira a remoção pelo motivo de direitos autorais, contendo seu nome e formas de contato.</li>
+                    <li>Após o contato nossa equipe entrara em contato e fazer a remoção do conteúdo ou tentara fazer um acordo que beneficie as duas partes.</li>
+                </ul>
+            </div>
+            <div class="uptade">
+                <hr>
+                <div>
+                    <h5>Direito Autorais</h5>
+                    <p>Última atualização: <br><b>14/11/2021 - 13:31 PM</b></p>
+                </div>
             </div>
         </section>
     </main>
@@ -249,14 +197,6 @@
         </section>
     </footer>
 </body>
-<script src="/public/js/recibo.js"></script>
 <script src="/public/js/styles.js"></script>
-<script src="../js/jquery-1.8.2.min.js" type="text/javascript"></script>
-<script src="../js/languages/jquery.validationEngine-pt-br.js" type="text/javascript"></script>
-<script src="../js/jquery.validationEngine.js" type="text/javascript"></script>
-<script>
-    jQuery(document).ready(function(){
-        jQuery("#meuFormulario").validationEngine();
-    });
-</script>
+</body>
 </html>
