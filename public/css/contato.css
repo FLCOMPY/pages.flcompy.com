@@ -317,3 +317,12 @@ input[type=checkbox]:checked:after {
     margin: 130px 15px;
   }
 }
+
+/* V2.0.1 */
+
+@media screen and (max-width: 615px) {
+  .input[type=checkbox] {
+    width: 5px !important;
+    height: 5px !important;
+  }
+}

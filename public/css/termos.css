@@ -370,3 +370,24 @@ iframe {
     width: 15rem;
   }
 }
+
+/* V2.0.2 */
+
+@media screen and (max-width: 375px) {
+  .line02 {
+    margin: 50px 0;
+  }
+
+  .himg-div {
+    width: auto;
+    margin-top: 50px;
+  }
+
+  .himg-div img {
+    width: 21rem;
+  }
+
+  .desktop li {
+    height: auto;
+  }
+}

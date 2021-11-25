@@ -31,8 +31,8 @@
   --linear-primary-main: linear-gradient(90deg, #1c5ca6 32.27%, #1e5ca7 32.28%, #6c5ecf 81.91%);
 
   /* Font */
-  --font-primary: 500 25px Poppins;
-  --font-secondary: 400 15px Inter;
+  --font-primary: 500 25px 'Poppins';
+  --font-secondary: 400 15px 'Inter';
 }
 
 /* Scoll - Styles */
@@ -49,6 +49,10 @@
 
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar);
+}
+
+label {
+  font: var(--font-secondary);
 }
 
 /* Hearder - Style */
@@ -531,4 +535,28 @@ ul {
 
 header {
   user-select: none;
+}
+
+/* V2.1 */
+
+.maps {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 35px;
+}
+
+.maps p {
+  font: 400 15px 'Inter', sans-serif;
+  color: var(--scrollbar);
+  margin: 0 10px;
+}
+
+.maps a {
+  font: 500 15px 'Inter', sans-serif;
+  color: var(--scrollbar);
+}
+
+.maps a:hover::after {
+  bottom: -5px !important;
 }
