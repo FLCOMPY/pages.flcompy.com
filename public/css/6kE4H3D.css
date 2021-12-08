@@ -88,7 +88,7 @@ iframe {
   transform: rotate(180deg);
 }
 
-.footer p, .footer b {
+.footer p, .footer i {
   font: var(--font-secondary);
   color: var(--color-three);
   text-align: center;
@@ -181,7 +181,26 @@ iframe {
     font-size: 2rem;
   }
 
-  .footer b {
+  .footer i {
     display: none;
+  }
+}
+
+/* Help / 07,56,85 */
+
+#err {
+  text-align: start;
+}
+
+.main h6 {
+  font: var(--font-secondary);
+  color: var(--color-three);
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  .header section {
+    padding: 0;
   }
 }
