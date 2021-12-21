@@ -22,6 +22,7 @@
   --color-two: #6a5ece;
   --color-three: #c3c1d1;
   --color-hover-one: #6a5ece;
+  --color-hover: #6a5ece;
 
   /* Color Linear */
   --linear-one: linear-gradient(125.59deg, #1c5ba6 -24.74%, rgba(73, 89, 182, 0.95) 52.13%, rgba(101, 88, 192, 0.81) 78.51%);
@@ -33,6 +34,9 @@
   /* Font */
   --font-primary: 500 25px 'Poppins';
   --font-secondary: 400 15px 'Inter';
+
+  /* FLCOMPY - Header | Services */
+  --bg-service: #1f1d2b;
 }
 
 /* Scoll - Styles */
@@ -559,4 +563,66 @@ header {
 
 .maps a:hover::after {
   bottom: -5px !important;
+}
+
+/* V2.2 */
+
+.flcompy {
+  background: var(--bg-service);
+  padding: 5px 0;
+}
+
+.flcompy a {
+  color: var(--color-three);
+  font: var(--font-secondary);
+  text-decoration: none;
+  font-size: 10px;
+  position: inherit;
+}
+
+.flcompy a:hover {
+  color: var(--color-hover);
+}
+
+.flcompy ul {
+  user-select: none;
+  list-style-type: none;
+  display: grid;
+  width: min-content;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+  margin-left: 8vw;
+}
+
+.flcompy li {
+  width: fit-content;
+  line-height: 0;
+}
+
+.lines {
+  background: var(--color-hover);
+  height: 1px;
+}
+
+@media screen and (max-width: 860px) {
+  .flcompy li {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .flcompy ul {
+    width: auto;
+    gap: 0;
+    margin: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .flcompy {
+    padding: 5 0;
+  }
 }
