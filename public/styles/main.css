@@ -35,7 +35,7 @@ body {
 /* == GLOBAL == */
 
 ._flcompy b {
-  color: var(--color-detail);
+  color: var(--color-detail) !important;
 }
 
 .flcompy-header,

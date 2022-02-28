@@ -40,6 +40,7 @@ i, img, video, i::before, header, footer {
 
 ::-webkit-scrollbar {
     width: 16px;
+    background: var(--background-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
