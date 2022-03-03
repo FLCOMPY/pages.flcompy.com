@@ -1,0 +1,387 @@
+:root {
+  --background-primary: #181720;
+  --background-secondary: #1f1d2b;
+
+  --color-one: #c3c1d1;
+  --color-two: #e2e8f0;
+  --color-three: #808191;
+
+  --hover: #6a5ece;
+  --line-hover: linear-gradient(90deg, #6c5ecf 2.21%, #1f1d2b 81.11%);
+
+  --color-detail: #6a5ece;
+  --color-visited: #ce6211;
+
+  --line-one: linear-gradient(
+    90deg,
+    #1c5ca6 32.27%,
+    #1e5ca7 32.28%,
+    #6c5ecf 81.91%
+  );
+  --line-two: #808191;
+
+  --font-primary: 800 30px "Overpass", Arial, Helvetica, sans-serif;
+  --font-secondary: 500 15px "Inter", Arial, Helvetica, sans-serif;
+
+  --scrollbar: #4d4d57;
+  --scrollbar-background: transparent;
+}
+
+:root {
+  --font-h1: 800 30px "Overpass", Arial, Helvetica, sans-serif;
+  --font-h2: 700 2.5rem "Overpass", Arial, Helvetica, sans-serif;
+  --font-h3: 600 23px "Overpass", Arial, Helvetica, sans-serif;
+  --font-h4: 500 19px "Overpass", Arial, Helvetica, sans-serif;
+  --font-h5: 500 15px "Overpass", Arial, Helvetica, sans-serif;
+  --font-h6: 500 15px "Inter", Arial, Helvetica, sans-serif;
+  --font-text: 500 15px "Inter", Arial, Helvetica, sans-serif;
+}
+
+.rmodal-orverlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+
+  display: grid;
+  place-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  padding: 1rem;
+}
+
+.rmodal-orverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rmodal {
+  background: var(--background-secondary);
+  border-radius: 10px;
+  padding: 1.5rem 3rem;
+  max-height: 30rem;
+  overflow: auto;
+}
+
+.rmodal::-webkit-scrollbar {
+  width: 16px;
+  background: transparent;
+}
+
+.rmodal::-webkit-scrollbar-thumb {
+  height: 56px;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+  background-color: var(--scrollbar);
+}
+
+.rmodal-contents main {
+  padding: 0 !important;
+  margin: 12px 0;
+}
+
+.report_modal-header {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+.report_modal-header h5 {
+  font: var(--font-h3);
+}
+
+.report_modal-header button {
+  outline: none;
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 1.2rem;
+  color: var(--color-one);
+}
+
+.report_modal-header button:hover {
+  transition: 0.5s;
+  color: var(--color-detail);
+}
+
+.report_modal-main div {
+  display: grid;
+  width: 100%;
+}
+
+.sr-only {
+  opacity: 0;
+  visibility: hidden;
+
+  display: none;
+}
+
+button {
+  user-select: none;
+}
+
+._fline {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+._formless input,
+._formless textarea {
+  width: 100%;
+  resize: none;
+
+  padding: 15px;
+
+  background-color: var(--background-secondary);
+
+  font: var(--font-secondary);
+  color: var(--color-three);
+
+  outline: none;
+  border: 2px solid var(--color-three);
+
+  position: relative;
+  top: 0;
+
+  transition: all 0.2s ease-in-out;
+}
+
+._formless input {
+  margin-bottom: 15px;
+}
+
+._formless textarea {
+  margin: 15px 0;
+}
+
+._formless input:hover,
+._formless textarea:hover {
+  transition: 0.5s;
+  border-color: var(--hover);
+
+  top: -4px;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+._iname,
+._iyear,
+._sservice {
+  margin-right: 10px;
+}
+
+._imail,
+._iwhatsapp,
+._ssocial {
+  margin-left: 10px;
+}
+
+#link {
+  margin: 0;
+  margin-top: 15px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.list {
+  width: 101.2% !important;
+}
+
+/* File Input */
+
+.filepond--credits {
+  display: none !important;
+}
+
+.filepond--drop-label {
+  color: var(--color-one) !important;
+  font: var(--font-text) !important;
+}
+
+.filepond--drip {
+  background: var(--background-secondary) !important;
+  opacity: 1 !important;
+
+  border-radius: 0 !important;
+}
+
+.filepond--drip:hover {
+  border-color: var(--hover);
+}
+
+.filepond--root,
+.filepond,
+.filepond--hopper {
+  border: 2px solid var(--color-three) !important;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.filepond--root:hover,
+.filepond:hover,
+.filepond--hopper:hover {
+  transition: 0.5s;
+  border: 2px solid var(--hover) !important;
+}
+
+.filepond--panel,
+.filepond--panel-root {
+  background: none !important;
+}
+
+.filepond--file {
+  background: var(--background-primary) !important;
+  border-radius: 0 !important;
+}
+
+.filepond--file-action-button.filepond--file-action-button::after {
+  cursor: pointer !important;
+}
+
+.filepond--file-action-button:hover,
+.filepond--file-action-button:focus {
+  transition: 0.5s;
+  border: 2px solid var(--hover) !important;
+  box-shadow: none !important;
+}
+
+#filepond--drop-label-h1ecs4u0q,
+.filepond--label-action {
+  color: var(--color-three);
+  cursor: pointer;
+}
+
+.filepond--label-action:hover {
+  transition: 0.5s;
+  color: var(--hover) !important;
+  text-decoration: underline;
+}
+
+/* Button */
+
+.section_next {
+  display: inline-flex;
+}
+
+.g-recaptcha {
+  margin-left: 25px;
+}
+
+.section_next button {
+  background: transparent;
+  border: 2px solid var(--color-detail);
+  padding: 10px 15px;
+
+  font: 500 15px "Overpass", Arial, Helvetica, sans-serif;
+  color: var(--color-two);
+  text-align: center;
+
+  cursor: pointer;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.btn_text {
+  display: flex;
+  align-items: center;
+
+  z-index: 99;
+}
+
+.section_next button:hover {
+  background-color: transparent;
+  color: var(--color-two) !important;
+}
+
+.section_next button:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+
+.section_next button:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: 1;
+  content: "";
+  background: var(--hover);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* reCaotcha */
+
+.terms_appley-modal {
+  margin-bottom: 0 !important;
+  margin-top: 15px;
+}
+
+/* Select Munchkin */
+
+.j-munchkin {
+  min-width: auto;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+  ._fline {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  ._iname,
+  ._iyear,
+  ._sservice,
+  ._imail,
+  ._iwhatsapp,
+  ._ssocial {
+    margin: 0px;
+  }
+
+  .myservice {
+    margin-bottom: 15px;
+  }
+
+  ._formless input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .rmodal {
+    padding: 2rem 0.5rem;
+  }
+
+  .filepond--drop-label.filepond--drop-label label, .terms_appley p  {
+    font-size: 12px !important;
+  }
+
+  .rmodal-orverlay {
+    padding: 8px;
+  }
+}

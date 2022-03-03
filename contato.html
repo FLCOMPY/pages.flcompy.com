@@ -19,7 +19,7 @@
     <meta name="twitter:title" content="Entrar em Contato | Flcompy./Pages">
     <meta name="twitter:description" content="Entre em contato com nossa equipe para tratar assuntos sobre dúvidas ou contato comercial.">
 
-    <!-- Analytics -->
+    <!-- Start Google -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMZ4KY3NQK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -28,6 +28,13 @@
     
         gtag('config', 'G-YMZ4KY3NQK');
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("formless").submit();
+        }
+    </script>
+    <!-- End Google -->
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@500;600;700;800;900&display=swap');
@@ -44,6 +51,7 @@
     <link rel="stylesheet" href="/asset/icomoon.io/style.css">
     <link rel="stylesheet" href="http://code.flcompy.com/munchkin/dist/css/2UXMNp.css">
     <link rel="stylesheet" href="/asset/munchkin/main.css">
+    <link rel="stylesheet" href="/asset/config/recaptcha.css">
 
     <meta charset="UTF-8">
     <meta name="language" content="pt-BR">
@@ -107,7 +115,7 @@
     <main class="flcompy-main" id="main">
         <section class="_fl-main">
             <h2><b>./</b>Contato</h2>
-            <form class="_formless" action="https://formsubmit.co/oi@flcompy.com" method="POST" autocomplete="off">
+            <form class="_formless" id="formless" action="https://formsubmit.co/oi@flcompy.com" method="POST" autocomplete="off">
                 <div class="_formless-grid">
                     <section>
                         <label for="c-name" class="sr-onlys">Nome Completo</label>
@@ -139,14 +147,26 @@
                         <label for="menssagem" class="sr-onlys">Mensagem</label>
                         <textarea placeholder="Descreva o motivo do contato" name="Mensagem" id="menssagem" minlength="3" maxlength="1000" cols="30" rows="10"></textarea>
                     </section>
-                    <section>
-                        <button type="submit">Enviar&nbsp;<i class="icon-chevron-right"></i></button>
+                    <section class="terms_appley">
+                        <p>Site protegido pelo Google reCaptcha <a href="https://policies.google.com/privacy">privacidade</a> e <a href="https://policies.google.com/terms">termo de uso</a>.</p>
                     </section>
+                    <section class="section_next">
+                        <button class="g-recaptcha" data-theme='dark' data-sitekey="6Lc5N1AdAAAAAK50eex57SM0ZGsDhPnkZ83iQBRM" data-callback='onSubmit' type="submit">Enviar&nbsp;<i class="icon-chevron-right"></i></button>
+                    </section>
+                </div>
+                <div class="_hidden">
+                    <input type="hidden" name="_next" value="http://pages.flcompy.com/ok">
+                    <input type="hidden" name="_subject" value="Novo Contato! | [pages.flcompy.com]">
+                    <input type="hidden" name="_cc" value="symail@flcompy.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="Seu contato com a Formless! | [pages.flcompy.com]">
+                    <input type="hidden" name="_template" value="box">
                 </div>
             </form>
             <h2><b>./</b>Chat</h2>
             <div class="_livechat">
                 <a href="http://chat.flcompy.com" target="iframe" onclick="window.open(this.href, this.target, 'width=320,height=450'); return false;">Live Chat <i class="icon-play"></i></a>
+                <button onclick="wlocate('http://click.forml.link/whatsapp');">WhatsApp<i class="icon-play"></i></button>
             </div>
         </section>
     </main>
