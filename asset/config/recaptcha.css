@@ -1,0 +1,17 @@
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
+.terms_appley {
+  margin-bottom: 15px !important;
+  font: var(--font-text);
+}
+
+.terms_appley p,
+.terms_appley a {
+  color: var(--color-three);
+}
+
+.terms_appley a::after {
+  content: none;
+}

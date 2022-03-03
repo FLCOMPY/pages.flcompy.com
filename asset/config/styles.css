@@ -1,0 +1,58 @@
+:root {
+    --background-primary: #181720;
+    --background-secondary: #1f1d2b;
+
+    --color-one: #c3c1d1;
+    --color-two: #E2E8F0;
+    --color-three: #808191;
+
+    --hover: #6a5ece;
+    --line-hover: linear-gradient(90deg, #6c5ecf 2.21%, #1f1d2b 81.11%);
+
+    --color-detail: #6a5ece;
+
+    --line-one: linear-gradient(90deg, #1c5ca6 32.27%, #1e5ca7 32.28%, #6c5ecf 81.91%);
+    --line-two: #808191;
+
+    --font-primary: 800 30px 'Overpass', Arial, Helvetica, sans-serif;
+    --font-secondary: 500 15px 'Inter', Arial, Helvetica, sans-serif;
+
+    --scrollbar: #4d4d57;
+    --scrollbar-background: transparent;
+
+    --section: #4d4d57;
+}
+
+body {
+    background: var(--background-primary);
+    font: var(--font-secondary);
+    color: var(--color-one);
+}
+
+i, img, video, i::before, header, footer {
+    user-select: none;
+}
+
+::selection {
+    background: var(--section);
+    color: var(--color-one);
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    background: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: var(--scrollbar);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
