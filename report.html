@@ -124,7 +124,7 @@
                <h3>Dados solicitadas:</h3>
                <li>Algumas informações são solicitadas como E-mail, Nome, Idade, Qual plataforma que está reportando e entre outras, preencha o máximo de campos para agilizar o atendimento.</li>
             </ul>
-            <button data-custom-open="modal-1" data-micromodal-trigger="modal-1">Reportar&nbsp;<i class="icon-play"></i></button>
+            <button onclick="FlModal.open()">Reportar&nbsp;<i class="icon-play"></i></button>
         </section>
     </main>
     <footer class="flcompy-footer" id="footer">
@@ -192,7 +192,7 @@
             <div class="rmodal-contents">
                 <header class="report_modal-header">
                     <h5><b>./</b>Reportar</h5>
-                    <button><i class="icon-x"></i></button>
+                    <button onclick="FlModal.close()"><i class="icon-x"></i></button>
                 </header>
                 <div class="_dline"></div>
                 <main class="report_modal-main">
@@ -285,6 +285,8 @@
         }
     </script>
     <script src="/public/script/main.js"></script>
+    <script src="/public/script/form.js"></script>
+    <script src="/asset/modal/active.js"></script>
 
     <!-- Load FilePond library -->
     <script src="https://unpkg.com/filepond/dist/filepond.js"></script>

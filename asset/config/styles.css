@@ -52,6 +52,12 @@ i, img, video, i::before, header, footer {
 }
 
 * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar) var(--background-secondary);
+}
+
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;

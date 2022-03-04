@@ -77,6 +77,8 @@
   font: var(--font-text);
   color: var(--color-three);
   text-align: justify;
+
+  line-height: 1.5rem;
 }
 
 ._terms-list a:visited {

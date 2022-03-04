@@ -196,6 +196,7 @@ body {
     display: grid;
     height: inherit;
     place-content: center;
+    text-align: center !important;
   }
 
   .__m-list a {
@@ -207,6 +208,7 @@ body {
   .open,
   .close {
     display: inline;
+    cursor: pointer;
   }
 
   .close {
@@ -262,8 +264,13 @@ body {
   nav.show div.close {
     visibility: visible;
     opacity: 1;
-    top: 3rem;
-    right: 3rem;
+  }
+
+  .closegrid {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    text-align: center;
   }
 
   /* Sub Menu */
@@ -381,6 +388,12 @@ body {
 
   ._list-footer li {
     justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  ._list-footer li {
+    justify-content: start !important;
   }
 }
 

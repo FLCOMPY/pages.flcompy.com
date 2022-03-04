@@ -67,6 +67,11 @@
   overflow: auto;
 }
 
+.rmodal {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) transparent;
+}
+
 .rmodal::-webkit-scrollbar {
   width: 16px;
   background: transparent;
@@ -106,11 +111,15 @@
 
   font-size: 1.2rem;
   color: var(--color-one);
+
+  padding: 5px 6.9px;
 }
 
 .report_modal-header button:hover {
   transition: 0.5s;
   color: var(--color-detail);
+  background-color: var(--background-primary);
+  border-radius: 5px;
 }
 
 .report_modal-main div {

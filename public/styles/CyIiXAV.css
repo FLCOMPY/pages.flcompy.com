@@ -158,7 +158,7 @@ button {
 }
 
 .__flm-terms a {
-    height: -webkit-fill-available;
+    height: fit-content;
     width: -webkit-fill-available;
     min-width: 15rem;
 
@@ -289,7 +289,6 @@ button {
     .__home-infos a {
         width: -webkit-fill-available;
         justify-content: center;
-        margin: auto;
     }
 
     .__flm-terms ul {
@@ -324,6 +323,7 @@ button {
     
     .__home-infos nav {
         flex-direction: column;
+        align-items: initial;
     }
     
     .__home-infos button {
